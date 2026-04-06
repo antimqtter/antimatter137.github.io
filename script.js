@@ -37,7 +37,7 @@ cats       - shows my 2 cats`;
         'clear': () => {
             terminalContent.innerHTML = `
                 <div class="line">
-                    <span class="prompt">antimatter@antimatter137.dev:/$ </span>
+                    <span class="prompt">antimqtter@antimatter137.dev:/$ </span>
                     <span class="command" id="current-line" contenteditable="true"></span>
                     <span class="placeholder">type help for commands</span>
                 </div>
@@ -63,11 +63,11 @@ cats       - shows my 2 cats`;
             return 'FUCK YOU!';
         },
         'github': () => { 
-            window.open('https://github.com/antimatter137', '_blank');
+            window.open('https://github.com/antimqtter', '_blank');
             return 'Opening GitHub profile...';
         },
         'whoami': () => {
-            return 'antimatter137';
+            return 'antimqtter';
         },
         'cats': () => {
             window.open('https://antimatter137.dev/cats', '_blank');
