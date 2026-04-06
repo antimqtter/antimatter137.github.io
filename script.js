@@ -126,7 +126,7 @@ cats       - shows my 2 cats`;
         } else {
             const commandDiv = document.createElement('div');
             commandDiv.className = 'line';
-            commandDiv.innerHTML = `<span class="prompt">antimatter@antimatter137.dev:/$ </span><span class="command-text">${currentCommand}</span>`;
+            commandDiv.innerHTML = `<span class="prompt">antimqtter@antimatter137.dev:/$ </span><span class="command-text">${currentCommand}</span>`;
             
             const lastLine = terminalContent.lastElementChild;
             terminalContent.removeChild(lastLine);
@@ -152,7 +152,7 @@ cats       - shows my 2 cats`;
             const newLine = document.createElement('div');
             newLine.className = 'line';
             newLine.innerHTML = `
-                <span class="prompt">antimatter@antimatter137.dev:/$ </span>
+                <span class="prompt">antimqtter@antimatter137.dev:/$ </span>
                 <span class="command" id="current-line" contenteditable="true"></span>
                 <span class="placeholder">type help for commands</span>
             `;
