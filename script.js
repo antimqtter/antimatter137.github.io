@@ -12,23 +12,21 @@ document.addEventListener('DOMContentLoaded', () => {
     const commands = {
         'help': () => {
             return `Available commands:
-projects   - see my projects
-filehost   - visit my file host
-email      - contact me with your email
-discord    - my discord profile
-pgp        - my pgp key
-github     - my github profile
-whoami     - show current user
+projects   - View my projects
+filehost   - Visit my file host
+email      - Email me
+discord    - My Discord
+pgp        - My pgp key
+github     - My github
+whoami     - Show current user
 clear      - clear terminal 
-cats       - shows my 2 cats`;
+cats       - My cat pictures`;
         },
         'projects': () => {
             return `Current Projects:
-  - Personal Website (This site!!)
-  - Discord Bot (Does many things)
-  - calculator with ai (JS)
-  - Unenrollment Toolkit (Dead)
-  - game rules for domination (Site)`;
+  - My Personal Website
+  - POC reverse shell
+  - Dominantion game site`;
         },
         'filehost': () => {
             window.open('https://files.antimatter137.dev', '_blank');
