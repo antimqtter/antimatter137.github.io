@@ -1,4 +1,3 @@
-//this uses particle js, and after making this i feel worse about my coding abilities
 particlesJS('particles-js', {
   "particles": {
     "number": {
