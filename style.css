@@ -1,4 +1,7 @@
 * {
+    cursor: url("cursor.png") 16 16, auto !important;
+}
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -70,7 +73,6 @@ body {
     height: 100%;
     object-fit: cover;
     border-radius: 50%;
-    border: 3px solid #222;
     transition: all 0.3s ease;
 }
 
@@ -368,7 +370,7 @@ h2 {
     pointer-events: none;
     user-select: none;
 }
-/* its the end!! */
+/* its the end!! *Was */
 footer {
     position: static;
     bottom: 0;
@@ -379,4 +381,74 @@ footer {
     color: #666;
     font-size: 0.9rem;
     z-index: 10;
+}
+body.error-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    overflow: hidden;
+}
+
+.error-container {
+    flex: 1;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    padding: 0 20px;
+}
+
+.error-container h1 {
+    font-size: 5rem;
+    color: #ff4d4d;
+    margin-bottom: 10px;
+}
+
+.error-container p {
+    font-size: 1.2rem;
+    color: #999;
+    margin-bottom: 30px;
+    max-width: 600px;
+}
+
+.error-container a {
+    background: #1a1a1a;
+    border: 1px solid #333;
+    color: #fff;
+    border-radius: 6px;
+    padding: 12px 30px;
+    text-decoration: none;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    display: inline-block;
+}
+
+.error-container a:hover {
+    transform: scale(1.07);
+    box-shadow: 0 0 10px rgba(255, 77, 77, 0.3);
+}
+
+/* keeps footer at bottom without scroll which looks better*/
+body.error-page footer {
+    position: fixed;
+    bottom: 10px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: #666;
+    font-size: 0.9rem;
+}
+
+@media (max-width: 600px) {
+    .error-container h1 {
+        font-size: 3.5rem;
+    }
+    .error-container p {
+        font-size: 1rem;
+    }
 }
