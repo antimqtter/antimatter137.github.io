@@ -347,7 +347,7 @@ body.error-page {
 
 .error-container h1 {
     font-size: 5rem;
-    color: #ff4d4d;
+    color: #fff;
     margin-bottom: 10px;
 }
 
@@ -371,7 +371,6 @@ body.error-page {
 
 .error-container a:hover {
     transform: scale(1.07);
-    box-shadow: 0 0 10px rgba(255, 77, 77, 0.3);
 }
 
 /* keeps footer at bottom without scroll which looks better*/
