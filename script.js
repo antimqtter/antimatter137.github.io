@@ -71,6 +71,9 @@ cats       - My cat pictures`;
             window.open('https://antimatter137.dev/cats', '_blank');
             return 'Opening cat pics...';
         },
+        'fuck': () => {
+            return 'FUCK YOU!';
+        },
     };
 
     document.addEventListener('click', (e) => {
