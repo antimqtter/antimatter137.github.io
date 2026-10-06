@@ -76,62 +76,6 @@ body {
     transition: all 0.3s ease;
 }
 
-.profile-image:hover {
-    transform: scale(1.05);
-}
-
-/* it looks cool, okay */
-.profile-image.status-online:hover img {
-    border-color: #2ecc71; /* spleen */
-    box-shadow: 0 0 20px rgba(46, 204, 113, 0.3);
-}
-
-.profile-image.status-idle:hover img {
-    border-color: #faa61a; /* yeller */
-    box-shadow: 0 0 20px rgba(250, 166, 26, 0.4);
-}
-
-.profile-image.status-dnd:hover img {
-    border-color: #f04747; /* reed */
-    box-shadow: 0 0 20px rgba(240, 71, 71, 0.4);
-}
-
-.profile-image.status-offline:hover img {
-    border-color: #747f8d; /* grey */
-    box-shadow: 0 0 20px rgba(116, 127, 141, 0.3);
-}
-
-.online-indicator {
-    width: 12px;
-    height: 12px;
-    border-radius: 50%;
-    position: absolute;
-    bottom: 25px;
-    right: 85px;
-    border: 2px solid #151515;
-}
-
-.online-indicator.status-online {
-    background: #2ecc71; /* spleen */
-    box-shadow: 0 0 10px rgba(46, 204, 113, 0.4);
-}
-
-.online-indicator.status-idle {
-    background: #faa61a; /* yeller */
-    box-shadow: 0 0 10px rgba(250, 166, 26, 0.4);
-}
-
-.online-indicator.status-dnd {
-    background: #f04747; /* reed */
-    box-shadow: 0 0 10px rgba(240, 71, 71, 0.4);
-}
-
-.online-indicator.status-offline {
-    background: #747f8d; /* grey */
-    box-shadow: none;
-}
-
-
 .profile-content {
     padding: 20px;
     color: #fff;
